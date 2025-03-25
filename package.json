@@ -1,0 +1,20 @@
+{
+  "name": "@rbxts/rolert",
+	"version": "1.0.0",
+	"main": "index.js",
+  "files": ["init."],
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/types": "^1.0.843",
+		"roblox-ts": "^3.0.0",
+		"typescript": "^5.8.2"
+	}
+}

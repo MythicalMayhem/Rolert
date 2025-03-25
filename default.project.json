@@ -1,0 +1,96 @@
+{
+	"name": "Rolert",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"RolertSignal": {
+				"$path": "out"
+			}
+		},
+
+		"ReplicatedStorage": {
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": { "$path": "node_modules/@rbxts" }
+				}
+			}
+		},
+		"TextChatService": {
+			"$properties": { "ChatVersion": "TextChatService" }
+		},
+		"Workspace": {
+			"BasePlate": {
+				"$className": "Part",
+				"$properties": {
+					"Color": [1, 1, 1],
+					"Size": [2048, 0.001, 2048],
+					"Anchored": true,
+					"Locked": true
+				}
+			},
+			"SpawnLocation": {
+				"$className": "SpawnLocation",
+				"$properties": {
+					"Anchored": true,
+					"Locked": true,
+					"CanCollide": false,
+					"Size": [0.25, 7, 7],
+					"Position": [0.25, 0, 0],
+					"CFrame": [0, 0, 0, 0.0, -1, 0, 1, 0, 0, 0, 0, 1],
+					"Shape": "Cylinder",
+					"Color": [0, 1, 0],
+					"Transparency": 0.2
+				},
+				"Decal": {
+					"$className": "Decal",
+					"$properties": {
+						"Texture": "rbxasset://textures/SpawnLocation.png",
+						"Face": "Right"
+					}
+				}
+			}
+		},
+		"Lighting": {
+			"$properties": {
+				"Brightness": 1.18,
+				"GlobalShadows": true,
+				"ShadowSoftness": 0.2,
+				"ClockTime": 0,
+				"TimeOfDay": "00:00:00",
+				"Technology": "Voxel"
+			},
+
+			"Sky": {
+				"$className": "Sky",
+				"$properties": {
+					"CelestialBodiesShown": true,
+					"MoonAngularSize": 11,
+					"MoonTextureId": "rbxasset://sky/moon.jpg",
+					"SkyboxBk": "rbxassetid://591058823",
+					"SkyboxDn": "rbxassetid://591059876",
+					"SkyboxFt": "rbxassetid://591058104",
+					"SkyboxLf": "rbxassetid://591057861",
+					"SkyboxRt": "rbxassetid://591057625",
+					"SkyboxUp": "rbxassetid://591059642",
+					"StarCount": 5555,
+					"SunAngularSize": 21,
+					"SunTextureId": "rbxasset://sky/sun.jpg"
+				}
+			},
+			"Atmosphere": {
+				"$className": "Atmosphere",
+				"$properties": {
+					"Color": [1, 1, 1],
+					"Decay": [1, 1, 1],
+					"Density": 0.34,
+					"Offset": 0,
+					"Glare": 1.68,
+					"Haze": 1.5
+				}
+			}
+		}
+	}
+}
