@@ -6,6 +6,7 @@ type RolertConnection = {
 	Sleep: (self: RolertConnection) -> nil,
 	Wake: (self: RolertConnection) -> nil,
 }
+--todo add listen only signal that returns a Firer
 
 function RolertConnectionCtr(callback: (s: any) -> nil, disconnect: () -> nil): RolertConnection
 	__i = __i + 1
